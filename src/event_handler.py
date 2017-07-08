@@ -96,6 +96,7 @@ class EventHandler:
 
 		with open(file_path, append_type) as f_out:
 			print(f_out)
+			print(os.path.isabs(file_path))
 			j_data = json.dumps(data_to_write)
 			j_data = j_data + '\n'
 			print(type(j_data))

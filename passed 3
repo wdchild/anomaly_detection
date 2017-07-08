@@ -1,0 +1,56 @@
+eidetic-daniel-7:insight_testsuite danielchild$ bash ./run_tests.sh
+
+CURRENT WORKING: /Users/danielchild/Desktop/INSIGHT PROBLEM/anomaly_detection/insight_testsuite/temp
+CURRENT DIRECTORY: src
+
+REL BATCH FILE: src/../log_input/batch_log.json
+REL STREAM FILE: src/../log_input/stream_log.json
+REL FLAGGED FILE: src/../log_output/flagged_purchases.json
+
+ABS BATCH: /Users/danielchild/Desktop/INSIGHT PROBLEM/anomaly_detection/insight_testsuite/temp/log_input/batch_log.json
+ABS STREAM: /Users/danielchild/Desktop/INSIGHT PROBLEM/anomaly_detection/insight_testsuite/temp/log_input/stream_log.json
+ABS FLAGGED: /Users/danielchild/Desktop/INSIGHT PROBLEM/anomaly_detection/insight_testsuite/temp/log_output/flagged_purchases.json
+
+Initiating handler.
+Processing batch data...
+Processing stream data...
+src/../log_output/flagged_purchases.json
+<_io.TextIOWrapper name='src/../log_output/flagged_purchases.json' mode='w' encoding='UTF-8'>
+False
+<class 'str'>
+{"event_type": "purchase", "timestamp": "2017-06-13 11:33:02", "id": "2", "amount": "1601.83", "mean": "29.1", "sd": "21.46"}
+
+Time elapsed to process batch and stream 0.00278
+[PASS]: test_1
+
+CURRENT WORKING: /Users/danielchild/Desktop/INSIGHT PROBLEM/anomaly_detection/insight_testsuite/temp
+CURRENT DIRECTORY: src
+
+REL BATCH FILE: src/../log_input/batch_log.json
+REL STREAM FILE: src/../log_input/stream_log.json
+REL FLAGGED FILE: src/../log_output/flagged_purchases.json
+
+ABS BATCH: /Users/danielchild/Desktop/INSIGHT PROBLEM/anomaly_detection/insight_testsuite/temp/log_input/batch_log.json
+ABS STREAM: /Users/danielchild/Desktop/INSIGHT PROBLEM/anomaly_detection/insight_testsuite/temp/log_input/stream_log.json
+ABS FLAGGED: /Users/danielchild/Desktop/INSIGHT PROBLEM/anomaly_detection/insight_testsuite/temp/log_output/flagged_purchases.json
+
+Initiating handler.
+Processing batch data...
+Processing stream data...
+src/../log_output/flagged_purchases.json
+<_io.TextIOWrapper name='src/../log_output/flagged_purchases.json' mode='w' encoding='UTF-8'>
+False
+<class 'str'>
+{"event_type": "purchase", "timestamp": "2017-06-13 11:33:02", "id": "2", "amount": "1601.83", "mean": "50.0", "sd": "16.33"}
+
+Time elapsed to process batch and stream 0.00274
+[FAIL]: your-own-test
+--- ./temp/log_output/flagged_purchases.json	2017-07-08 10:53:21.000000000 -0400
++++ ./tests/your-own-test/log_output/flagged_purchases.json	2017-07-07 20:11:34.000000000 -0400
+@@ -1 +1,4 @@
+-{"event_type": "purchase", "timestamp": "2017-06-13 11:33:02", "id": "2", "amount": "1601.83", "mean": "50.0", "sd": "16.33"}
++{"event_type": "purchase", "timestamp": "2017-06-13 11:33:02", "id": "2", "amount": "1601.83", "mean": "40.0", "sd": "8.16"}
++{"event_type": "purchase", "timestamp": "2017-06-13 11:33:02", "id": "2", "amount": "1601.83", "mean": "40.0", "sd": "8.16"}
++{"event_type": "purchase", "timestamp": "2017-06-13 11:33:02", "id": "2", "amount": "1601.83", "mean": "32.44", "sd": "19.06"}
++{"event_type": "purchase", "timestamp": "2017-06-13 11:33:02", "id": "2", "amount": "1601.83", "mean": "29.1", "sd": "21.46"}
+[Sat Jul  8 10:53:21 EDT 2017] 1 of 2 tests passed
