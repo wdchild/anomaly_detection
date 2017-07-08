@@ -24,7 +24,7 @@ Most of the heavy lifting is done by a class 'EventHandler'
 which was initially intended as a singleton until I realized Python does not handle singletons
 as easily as Objective-C. (I'd never tried it before in Python.) The EventHandler
 reads in files and processes data. In the case of batch data, it stores the key
-'degree' (D) and 'transaction count' (C) values in class variables. Processing by 
+'degree' (D) and 'transaction count' (T) values in class variables. Processing by 
 the EventHandler instance is done in two batches using the methods:
 
 - processBatchData
