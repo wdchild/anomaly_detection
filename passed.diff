@@ -1,0 +1,44 @@
+eidetic-daniel-7:insight_testsuite danielchild$ bash ./run_tests.sh
+
+CURRENT WORKING: /Users/danielchild/Desktop/INSIGHT PROBLEM/anomaly_detection/insight_testsuite/temp
+CURRENT DIRECTORY: src
+
+REL BATCH FILE: src/../log_input/batch_log.json
+REL STREAM FILE: src/../log_input/stream_log.json
+REL FLAGGED FILE: src/../log_output/flagged_purchases.json
+
+ABS BATCH: /Users/danielchild/Desktop/INSIGHT PROBLEM/anomaly_detection/insight_testsuite/temp/log_input/batch_log.json
+ABS STREAM: /Users/danielchild/Desktop/INSIGHT PROBLEM/anomaly_detection/insight_testsuite/temp/log_input/stream_log.json
+ABS FLAGGED: /Users/danielchild/Desktop/INSIGHT PROBLEM/anomaly_detection/insight_testsuite/temp/log_output/flagged_purchases.json
+
+Initiating handler.
+Processing batch data...
+Processing stream data...
+/Users/danielchild/Desktop/INSIGHT PROBLEM/anomaly_detection/insight_testsuite/temp/log_output/flagged_purchases.json
+Time elapsed to process batch and stream 0.00119
+[FAIL]: test_1
+--- ./temp/log_output/flagged_purchases.json	2017-07-07 20:06:38.000000000 -0400
++++ ./tests/test_1/log_output/flagged_purchases.json	2017-07-07 13:38:52.000000000 -0400
+@@ -1 +0,0 @@
+-{"event_type": "purchase", "timestamp": "2017-06-13 11:33:02", "id": "2", "amount": "1601.83", "mean": "29.1", "sd": "21.46"}
+
+CURRENT WORKING: /Users/danielchild/Desktop/INSIGHT PROBLEM/anomaly_detection/insight_testsuite/temp
+CURRENT DIRECTORY: src
+
+REL BATCH FILE: src/../log_input/batch_log.json
+REL STREAM FILE: src/../log_input/stream_log.json
+REL FLAGGED FILE: src/../log_output/flagged_purchases.json
+
+ABS BATCH: /Users/danielchild/Desktop/INSIGHT PROBLEM/anomaly_detection/insight_testsuite/temp/log_input/batch_log.json
+ABS STREAM: /Users/danielchild/Desktop/INSIGHT PROBLEM/anomaly_detection/insight_testsuite/temp/log_input/stream_log.json
+ABS FLAGGED: /Users/danielchild/Desktop/INSIGHT PROBLEM/anomaly_detection/insight_testsuite/temp/log_output/flagged_purchases.json
+
+Initiating handler.
+Processing batch data...
+Processing stream data...
+/Users/danielchild/Desktop/INSIGHT PROBLEM/anomaly_detection/insight_testsuite/temp/log_output/flagged_purchases.json
+Time elapsed to process batch and stream 0.0011
+diff: ./tests/your-own-test/log_output/flagged_purchases.json: No such file or directory
+[PASS]: your-own-test
+[Fri Jul  7 20:06:38 EDT 2017] 1 of 2 tests passed
+eidetic-daniel-7:insight_testsuite danielchild$ clear
