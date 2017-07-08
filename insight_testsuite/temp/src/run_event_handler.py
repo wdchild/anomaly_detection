@@ -43,13 +43,13 @@ print()
 # various types found in the batch_log and stream_log.
 handler = EventHandler(rel_batch_file_loc, rel_stream_file_loc, rel_flagged_file_loc)
 
-# PROCESS THE BATCH DATA
-handler.processBatchData(rel_batch_file_loc)
+# PROCESS THE BATCH DATA (REFACTORED SO FILE LOCATONS DELIVERED DURING INIT METHOD)
+handler.processBatchData()
 
 # PROCESS THE STREAM DATA
 # Note, this should be put in a different python script if you were
 # doing this in in a real application.
-handler.processStreamData(rel_stream_file_loc)
+handler.processStreamData()
 
 # SEE HOW LONG IT TOOK
 toc = time.clock()
